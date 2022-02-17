@@ -1,0 +1,33 @@
+<div>
+    <h1>Sighting <%= index %></h1>
+    <div>
+      <% if (sighting.text) { %>
+      <div>text: <%= sighting.text %></div>
+      <% } %>
+      <!---->
+      <% if (sighting.date_time) { %>
+      <div>date_time: <%= sighting.date_time %></div>
+      <% } %>
+      <!---->
+      <% if (sighting.city) { %>
+      <div>city: <%= sighting.city %></div>
+      <% } %>
+      <!---->
+      <% if (sighting.state) { %>
+      <div>state: <%= sighting.state %></div>
+      <% } %>
+      <!---->
+      <% if (sighting.shape) { %>
+      <div>shape: <%= sighting.shape %></div>
+      <% } %>
+      <!---->
+      <% if (sighting.duration) { %>
+      <div>duration: <%= sighting.duration %></div>
+      <% } %>
+      <!---->
+      <% if (sighting.summary) { %>
+      <div>summary: <%= sighting.summary %></div>
+      <% } %>
+      <!---->
+    </div>
+  </div>
