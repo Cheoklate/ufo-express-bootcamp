@@ -1,27 +1,28 @@
 <html>
 	<body>
 		<h1>Edit a UFO sighting!</h1>
-		<form action="/sighting/<%= index %>?_method=PUT" method="POST">
-			<label for="month">Text:</label><br />
-			<input type="text" id="text" name="text" /><br />
+		<form action="/sighting/<%= index %>/edit?_method=PUT" method="POST">
+			<label for="text">Text:</label><br />
+			<input type="text" id="text" class="form-control" name="text" value="<%= sighting.text %>"  /><br />
 
 			<label for="date_time">Date Time:</label><br />
-			<input type="text" id="date_time" name="date_time" /><br />
+			<input type="text" id="date_time" class="form-control" name="date_time" value="<%= sighting.date_time %>"
+            />/><br />
 
 			<label for="city">City:</label><br />
-			<input type="text" id="city" name="city" /><br />
+			<input type="text" id="city" class="form-control" name="city" value = "<%= sighting.city %> "/><br />
 
 			<label for="state">State:</label><br />
-			<input type="text" id="state" name="state" /><br />
+			<input type="text" id="state" class="form-control" name="state" value = "<%= sighting.state %> "/><br />
 
-			<label for="shape">Shape:</label><br />
-			<input type="text" id="shape" name="shape" /><br />
+			<label for="shape">Shape:</label><br />	
+			<input type="text" id="shape" class="form-control" name="shape" value = "<%= sighting.shape %> "/><br />
 
 			<label for="duration">Duration:</label><br />
-			<input type="text" id="duration" name="duration" /><br />
+			<input type="text" id="duration" class="form-control" name="duration" value = "<%= sighting.duration %> "/><br />
 
 			<label for="summary">Summary:</label><br />
-			<input type="text" id="summary" name="summary" /><br />
+			<input type="text" id="summary" class="form-control" name="summary" value = "<%= sighting.summary %> "/><br />
 
 			<input type="submit" value="Submit" />
 		</form>
